@@ -11,7 +11,6 @@ public class PriorityHack {
         this.priorityNote = priorityNote;
     }
 
-    //Getter methods 
     public Hack getHackathon() {
         return hackathon;
     }
@@ -24,7 +23,6 @@ public class PriorityHack {
         return priorityNote;
     }
 
-    //Setter methods
     public void setHackathon (Hack hackathon) {
         this.hackathon = hackathon;
     }
