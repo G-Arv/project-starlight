@@ -8,12 +8,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 
-/* 
-*TODO: So I can't figure out how to set up JSON since there's stuff I can't download,
-*so here's another idea:
-  1. Check how to change the null parameter so it doesn't print out null for the 2022/2023 dates
-  2. After this I can fork it to Github with the third button on the left and I should be all set
-*/
 public class StarlightMain {
     /** 
      * Alphabetically sorts the user's hackathon list by hackathon name
@@ -81,11 +75,11 @@ public class StarlightMain {
                 if (season.equals("Fall 2022")) {
                     System.out.println("Here is a list of hackathons occuring in Fall 2022:");
                     for (int i = 0; i < hackathons.size(); ++i) {
-                        if (hackathons.get(i).getHackEndDate() != null) {
-                            date = hackathons.get(i).getHackStartDate() + " - " + hackathons.get(i).getHackEndDate();
-                        }
-                        else {
+                        if (hackathons.get(i).getHackEndDate().equals("")) {
                             date = hackathons.get(i).getHackStartDate();
+                        }
+                        else if (!hackathons.get(i).getHackEndDate().equals("")) {
+                            date = hackathons.get(i).getHackStartDate() + " - " + hackathons.get(i).getHackEndDate();
                         }
                         if (date.contains("2022")){
                             printResults(date, hackathons, i);
@@ -95,11 +89,10 @@ public class StarlightMain {
                 else if (season.equals("Spring 2023")) {
                     System.out.println("Here is a list of hackathons occuring in Spring 2023:");
                     for (int i = 0; i < hackathons.size(); ++i) {
-                        //well we have an error here... why isn't getHackEndDate null?
-                        if (hackathons.get(i).getHackEndDate() == "") {
+                        if (hackathons.get(i).getHackEndDate().equals("")) {
                             date = hackathons.get(i).getHackStartDate();
                         }
-                        else if (hackathons.get(i).getHackEndDate() != "") {
+                        else if (!hackathons.get(i).getHackEndDate().equals("")) {
                             date = hackathons.get(i).getHackStartDate() + " - " + hackathons.get(i).getHackEndDate();
                         }
                         if (date.contains("2023")){
@@ -312,7 +305,6 @@ public class StarlightMain {
             }
             if (hacks.toLowerCase().contains("hackathon list")) {
                 PrintWriter out = new PrintWriter(userFile);
-                //why is this skipping over the for loop? how does this store itself?
                 for (int i = 0; i < userList.size(); ++i) { 
                     out.println(userList.get(i).printString());
                 }
@@ -342,7 +334,6 @@ public class StarlightMain {
         Scanner in = new Scanner(new File("hackathoninfo.txt"));
         in.useDelimiter("-|\n");
 
-        //So there's an error with storing technica - why? is it due to the scanner blanking out again?
         ArrayList<Hack> hackathons = new ArrayList<Hack>();
         while(in.hasNext()) {
             int hackID = in.nextInt();
@@ -355,7 +346,6 @@ public class StarlightMain {
             String hackReg = in.next();
             String hackLink = in.next();
 
-            //So the error is here - when I create a new hackathon, it stores it as null
             Hack hackathon = new Hack(hackID, hackName, hackStartDate, hackEndDate, hackMode, hackLocation, Boolean.parseBoolean(womenHack), hackReg, hackLink);
             hackathons.add(hackathon);
         }
