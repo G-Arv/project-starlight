@@ -1,0 +1,17 @@
+0-HackHer413-Spring 2023--Hybrid-Amherst, MA-True-Closed-https://www.hackher413.com/ 
+1-AthenaHacks-February 25, 2023-February 26, 2023-Hybrid-Los Angeles, CA-True-Closed-http://athenahacks.com/ 
+2-Technica-October 15, 2022-October 16, 2022-Hybrid-College Park, MD-True-Closed-https://gotechnica.org/ 
+3-Superposition-Summer 2023--Virtual--True-Closed-https://superposition.tech/hackathon6.html 
+4-PearlHacks-Spring 2023--Hybrid-Chapel Hill, NC-True-Closed-https://pearlhacks.com/ 
+5-TechTogether-Fall 2022--In Person-Multiple Locations-True-NA-https://www.techtogether.io/events 
+6-Hack@Brown-Spring 2023--Hybrid-Providence, RI-False-Closed-https://2022.hackatbrown.org 
+7-HackHarvard-Fall 2022--Unknown-Cambridge, MA-False-Closed-https://www.instagram.com/hackharvardcollege/ 
+8-HackHolyoke-Fall 2022--Unknown-South Hadley, MA-False-Closed-https://www.instagram.com/hackholyoke/ 
+9-HackMerced-Spring 2023--Unknown-Merced, CA-False-Closed-https://hackmerced.com/#/
+10-HackMIT-October 1, 2022-October 2, 2022-In Person-Cambridge, MA-False-Closed-https://hackmit.org
+11-HackRPI-November 5,2022-November 6, 2022-Unknown-Troy, NY-False-Closed-https://www.instagram.com/hack.rpi/
+12-Hacklahoma-Spring 2023--In Person-Norman, OK-False-Closed-https://hacklahoma.org
+13-HackUMass-Fall 2022--Hybrid-Amherst, MA-False-Closed-https://hackumass.com
+14-HackBU-Spring 2023--Virtual-Binghamton, NY-False-Closed-https://www.hackbu.org
+15-HackPSU-Spring 2023--In Person-University Park, PA-False-Closed-https://hackpsu.org/live
+16-PennApps-September 2, 2022-September 4, 2022-In Person-Philadelphia, PA-False-Closed-https://2022f.pennapps.com
